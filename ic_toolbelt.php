@@ -39,6 +39,8 @@ add_action('wp_head','show_template');
 	echo '</div>';
 }
 
+// Thanks To wpmudev
+// https://premium.wpmudev.org/blog/adding-admin-notices/?sul=b&utm_expid=3606929-90.6a_uo883STWy99lnGf8x1g.1&utm_referrer=https%3A%2F%2Fwww.google.co.za%2F
 
 function my_error_notice() {
     ?>
