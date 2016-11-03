@@ -39,4 +39,14 @@ add_action('wp_head','show_template');
 	echo '</div>';
 }
 
+
+function my_error_notice() {
+    ?>
+    <div class="error notice">
+        <p><?php _e( 'Please be sure to deactivate IC Toolbelt plugin before launch.', 'ic_toolbelt_idea_catalyst' ); ?></p>
+    </div>
+    <?php
+}
+add_action( 'admin_notices', 'my_error_notice' );
+
 ?>
